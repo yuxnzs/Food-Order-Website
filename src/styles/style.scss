@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+@import "./homepage.scss";
+@import "./restaurant-card.scss";
+@import "./restaurant-category.scss";
+@import "./loader.scss";

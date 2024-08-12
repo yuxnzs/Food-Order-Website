@@ -1,0 +1,16 @@
+.restaurant-category {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 95rem; // 4 Restaurant Cards' total width
+
+  .category-name {
+    font-size: 2rem;
+    margin-left: 0.5rem; // Same as .restaurant-container in restaurant-card.scss
+  }
+
+  .restaurant-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
