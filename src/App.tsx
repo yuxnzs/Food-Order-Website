@@ -1,7 +1,13 @@
-import React from "react";
+import { APIProvider } from "./services/APIContext";
+import Homepage from "./pages/Homepage";
+import "./styles/style.css";
 
 function App() {
-  return <div></div>;
+  return (
+    <APIProvider>
+      <Homepage />
+    </APIProvider>
+  );
 }
 
 export default App;
