@@ -1,0 +1,9 @@
+.meal-card-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 79rem; // 3 cards + 2 * 2rem gap
+  height: 100%;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
