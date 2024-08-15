@@ -1,0 +1,32 @@
+.Navbar {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    li button {
+      background-color: #f0f0f0;
+      border: none;
+      border-radius: 50px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+}

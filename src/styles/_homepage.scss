@@ -3,6 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  // +0.5rem for first Restaurant Category
+  // Same as Navbar + other Restaurant Categories' space (5.5rem in total)
+  .homepage-content {
+    padding-top: 0.5rem;
+  }
 }
 
 .error {

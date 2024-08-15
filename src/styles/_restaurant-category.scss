@@ -4,6 +4,10 @@
   margin-bottom: 1rem;
   width: 95rem; // 4 Restaurant Cards' total width
 
+  // +0.5rem than Navbar's height to have more space between Navbar and Restaurant Category when scrolling by button
+  padding-top: 5.5rem;
+  margin-top: -5.5rem;
+
   .category-name {
     font-size: 2rem;
     margin-left: 0.5rem; // Same as .restaurant-container in restaurant-card.scss
