@@ -1,5 +1,6 @@
 import axios from "axios";
 import Restaurant from "../types/Restaurant";
+import RestaurantDetail from "../types/RestaurantDetail";
 
 class APIService {
   private baseUrl: string;
@@ -15,6 +16,22 @@ class APIService {
       return response.data;
     } catch (error) {
       console.error("Error fetching restaurants:", error);
+      throw error;
+    }
+  }
+
+  // Fetch a restaurant details by category and id
+  async getRestaurantDetails(
+    category: string,
+    id: string
+  ): Promise<RestaurantDetail> {
+    try {
+      const response = await axios.get(
+        `${this.baseUrl}/restaurant/${category}/${id}`
+      );
+      return response.data;
+    } catch (error) {
+      console.error("Error fetching restaurant:", error);
       throw error;
     }
   }
